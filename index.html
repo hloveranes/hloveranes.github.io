@@ -1,0 +1,205 @@
+<!-- The doctype should define the page as an HTML5 document -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- A meta tag should define the character set to be UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- A viewport meta tag should make the web site work on all devices and screen resolutions -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony's Portfolio Site</title>
+    <!-- Take care of all our styling needs -->
+    <link rel="stylesheet" href="./app/css/tailwind.2.2.4.min.css">
+    <link rel="stylesheet" href="./app/css/introduction.css">
+    
+    <link rel="stylesheet" href="./app/css/outline.css">
+    <link rel="stylesheet" href="./app/css/project.css">
+    <link rel="stylesheet" href="./app/css/testimonial.css">
+    <link rel="stylesheet" href="./app/css/contact.css">
+    <link rel="stylesheet" href="./app/css/footer.css">
+
+  </head>
+
+  <body id="app-body">
+    <!-- Introduction section -->
+    <section id="introduction" class="max-w-screen-md mx-auto md:mt-32 mt-20">
+      <div class="p-3 text-center">
+        <h1 class="owner-name text-6xl font-bold">Name</h1>
+        <h1 class="owner-role text-3xl font-bold mt-5">Role</h1>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-screen-md mx-auto md:mt-32 mt-20">
+      <div class="p-3">
+          <div class="text-xl">
+              <h1 class="text-center text-4xl font-bold mb-14">More Info About Me</h1>
+              <p class="text-center">I have been doing web development for the past 2 years, with different programming languages to gain different skill set.</p>
+              
+              <p class="text-center mt-6">As i explore the world of programming i've been in love with <b>Python</b> and <b>JavaScript</b> as i dive deeper in my career.</p>
+              
+              <p class="text-center mt-6">I trained with different library & frameworks such as <b>ReactJS</b>, <b>Laravel</b>, <b>Angular</b> to find which framework i am most compatible with, finally i found <b>VueJS</b> and <b>Django</b> from then on i keep using it on different projects.</p>
+              
+              <p class="text-center mt-6">I've been also more familiar with <b>WordPress</b>, <b>MySQL</b>, <b>PostgreSQL</b>, <b>PHP</b>, <b>NodeJs</b>, <b>Git</b>, <b>HTML</b> & <b>CSS</b>.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- project section -->
+    <section id="project" class="max-w-screen-lg mx-auto md:mt-32 mt-20">
+      <div>
+        <h1 class="text-center text-4xl font-bold mb-14">Projects</h1>
+        <div id="owner-projects" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="border m-3 rounded">
+            <img src="./app/photo/project/work_default.jpg" alt="project 1">
+            <div>
+              <h6 class="text-base font-bold">Project Title</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#top" target="_blank">View Project</a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- testimonial section -->
+    <section id="testimonial" class="max-w-screen-md mx-auto md:mt-32 mt-20">
+      <div class="p-3">
+        <h1 class="text-center text-4xl font-bold mb-6">Testimonial</h1>
+        <h1 class="text-center text-xl font-bold mb-8">People I've worked with have said good thing(s)</h1>
+        <div>
+          <div class="grid grid-rows-12 sm:grid-cols-12 border rounded justify-center p-2">
+            <div class="sm:w-full mx-auto w-40 sm:col-span-3 justify-self-center">
+              <img class="avatar-cirlce w-full" src="./app/photo/testimonial/sir_nirmal_yapa.jpg" alt="first client">
+            </div>
+            
+            <div class="max-w-xl sm:pl-2 sm:col-span-9 sm:mt-0 mt-5">
+              <p class="text-xl font-bold sm:text-left text-center">Nirmal Chinthaka Yapa</p>
+              <p class="text-base font-semibold sm:text-left text-center">Business Manager at Marketing Company</p>
+              <p class="mt-3">"I would like to thank you again for your help regarding the removal of malware in my website and also adjusting and correcting other things like php coding in browser language, site speed improvement, suitable plugin arrangements, you have done a professional job while attending all my questions and disturbance without a complaint, and working with a skilled personal like you was a good learning curve for me well. I thank you again and wish you all best for your future endeavors!!!"
+              </p>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="max-w-screen-md mx-auto md:mt-32 mt-20">
+      <div class="p-3">
+        <form id="contact-form" method="post" class="max-w-lg mx-auto">
+          <div>    
+            <h1 class="text-center text-4xl font-bold mb-14">Get In Touch</h1>
+          
+            <div class="parent-outlined">
+              <div class="outlined__control">
+                <div class="outlined__slot">
+                  <fieldset aria-hidden="true">
+                    <legend style="width: 95px;">
+                      <span>&ZeroWidthSpace;</span>
+                    </legend>
+                  </fieldset>
+                  <div class="outlined-text-field__slot">
+                    <label for="input-3" class="outlined-label">Your Name *</label>
+                    <input id="input-3" placeholder="Placeholder" type="text" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="parent-outlined">
+              <div class="outlined__control">
+                <div class="outlined__slot">
+                  <fieldset aria-hidden="true">
+                    <legend style="width: 95px;">
+                      <span>&ZeroWidthSpace;</span>
+                    </legend>
+                  </fieldset>
+                  <div class="outlined-text-field__slot">
+                    <label for="user-contact-subject" class="outlined-label">Your Subject</label>
+                    <input id="user-contact-subject" type="email" name="email" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="parent-outlined">
+              <div class="outlined__control">
+                <div class="outlined__slot">
+                  <fieldset aria-hidden="true">
+                    <legend style="width: 91px;">
+                      <span>&ZeroWidthSpace;</span>
+                    </legend>
+                  </fieldset>
+                  <div class="outlined-text-field__slot">
+                    <label for="user-contact-email" class="outlined-label">Your Email *</label>
+                    <input id="user-contact-email" type="email" name="user-email" placeholder="Email" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <textarea class="focus:outline-none border border-gray-400 rounded resize-none w-full p-2" id="user-contact-message" rows="5" name="message" placeholder="Message" required></textarea>
+            </div>
+
+          </div>
+          <div class="mt-8">
+            <button class="shadow w-full py-2 px-6 border border-gray-400 rounded font-bold" id="submit" type="submit" value="SEND">
+              <span>SEND</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section id="footer" class="md:mt-32 mt-20">
+      <div class="bg-opacity-80 bg-black pt-10 pb-5">
+        <div class="flex flex-row w-full justify-center py-2">
+          <div class="p-2">
+            <a id="user-linkedin" href="#" target="_blank">
+              <img class="mx-auto" src="./app/svg/linkedin.svg" alt="linked-in">
+              <span class="text-white">LinkedIn</span>
+            </a>
+          </div>
+          <div class="p-2">
+            <a id="user-github" href="#" target="_blank">
+              <img class="mx-auto" src="./app/svg/github.svg" alt="github">
+              <span class="text-white">GitHub</span>
+            </a>
+          </div>
+          <div class="p-2">
+            <a id="user-online-jobs-ph" href="#" target="_blank">
+              <img class="mx-auto" src="./app/svg/online-jobs-ph.svg" alt="online-jobs-ph">
+              <span class="text-white">OnlineJobs</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row w-full justify-center py-2">
+          <div class="flex flex-row m-2 mx-auto sm:m-5">
+            <div>
+              <img src="./app/svg/phone-call.svg" alt="phone-call">
+            </div>
+            <div>
+              <a class="text-white ml-2" id="user-phone-number" href="tel:" title="Give me a call">+639x xxxx-xxxx</a>
+            </div>
+          </div>
+          
+          <div class="flex flex-row m-2 mx-auto sm:m-5">
+            <div>
+              <img src="./app/svg/mail.svg" alt="mail">
+            </div>
+            <div>
+              <a class="text-white ml-2" id="user-email" href="mailto:" title="Send me an email">example@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-opacity-90 bg-black p-1 text-center"><span class="text-gray-100 text-gray-2 00" id="page-footer">Copyright &copy; xxxx - Structured and coded with simplicity by Owner</span></footer>
+    </section>
+
+    <script type="module" src="./app/js/core.js" defer async></script>
+  </body>
+</html>

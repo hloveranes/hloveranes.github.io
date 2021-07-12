@@ -1,0 +1,128 @@
+/* for input elements */
+div.parent-outlined {
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 16px;
+  letter-spacing: normal;
+  max-width: 100%;
+  text-align: left;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  transition: border .3s cubic-bezier(.25,.8,.5,1);
+  position: relative;
+}
+
+div.parent-outlined > .outlined__control, div.parent-outlined .outlined__slot, div.parent-outlined fieldset {
+  color: inherit;
+  border-radius: inherit;
+}
+
+div.parent-outlined > .outlined__control {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  min-width: 0;
+  width: 100%;
+}
+
+div.parent-outlined > .outlined__control > .outlined__slot {
+  color: rgba(0,0,0,.38);
+  padding: 0 12px;
+  min-height: 40px;
+  margin-bottom: 4px;
+  background: transparent;
+  align-items: stretch;
+  cursor: text;
+  transition: background .3s cubic-bezier(.25,.8,.5,1);
+}
+  
+div.parent-outlined > .v-input__slot {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  margin-bottom: 8px;
+  min-height: inherit;
+  position: relative;
+  transition: .3s cubic-bezier(.25,.8,.5,1);
+  width: 100%;
+}
+
+div.parent-outlined > .outlined__control > .outlined__slot > fieldset {
+  padding-left: 8px;
+  border-collapse: collapse;
+  border: 1px solid;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transition-duration: .3s;
+  transition-property: color,border-width;
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+div.parent-outlined > .outlined__control > .outlined__slot fieldset > legend {
+  text-align: left;
+  line-height: 11px;
+  padding: 0;
+  transition: width .3s cubic-bezier(.25,.8,.5,1);
+  border: 0;
+  color: inherit;
+  display: table;
+  white-space: normal;
+  max-width: 100%;
+}
+
+div.parent-outlined > .outlined__control > .outlined__slot > .outlined-text-field__slot {
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  align-items: center;
+}
+
+div.parent-outlined > .outlined__control > .outlined__slot > .outlined-text-field__slot > label {
+  transform-origin: top left;
+  color: rgba(0,0,0,.6);
+  height: 20px;
+  line-height: 20px;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  font-size: 16px;
+  min-height: 8px;
+  transition: .3s cubic-bezier(.25,.8,.5,1);
+  left: 0px; 
+  right: auto;
+  top: 50%;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+div.parent-outlined > .outlined__control > .outlined__slot > .outlined-text-field__slot > input:focus {
+  outline: none;
+}
+
+div.parent-outlined > .outlined__control > .outlined__slot > .outlined-text-field__slot > input {
+  color: rgba(0,0,0,.87);
+  flex: 1 1 auto;
+  padding: 8px 0;
+  max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  font: inherit;
+  top: 50%;
+  position: absolute;
+  -ms-transform: translateY(5%);
+  transform: translateY(5%);
+}
