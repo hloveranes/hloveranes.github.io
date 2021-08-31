@@ -43,13 +43,13 @@ const Project = (data, display_count = 3, nodeElement) => {
         div.classList.add("border")
         div.classList.add("m-3")
         div.classList.add("rounded")
+        div.classList.add("shadow-md")
         div.appendChild(img)
         div.appendChild(childDiv)
 
         if(display_count != 0){
             nodeElement.appendChild(div)
             display_count -= 1
-            // console.log(display_count)
         }
     })
 } 

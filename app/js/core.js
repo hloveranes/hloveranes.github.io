@@ -1,6 +1,7 @@
 // Portfolio Settings
 
 import Base from "./base.js";
+import Navigation from "./navigation.js"
 import User from "./user.js";
 import Remove from "./remove.js";
 import Project from "./project.js";
@@ -49,6 +50,11 @@ var role = 'Full Stack Web Developer'
 // calls all function
 
 Remove.CodeComment()
+
+// window.onload = () => {
+// }
+// navigation
+Navigation.Nav()
 
 // work
 Project.Project(context_json, display_count, Base.NodeElement('owner-projects', true))
