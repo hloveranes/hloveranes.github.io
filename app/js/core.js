@@ -52,7 +52,7 @@ var role = 'Full Stack Web Developer'
 Remove.CodeComment()
 
 // Base.OnLoadOfPage()
-Base.OnScrollPage(Base.NodeElement('drawer-menu', true))
+Base.OnScrollPage(Base.NodeElement('.nav-close', false), Base.NodeElement('drawer-menu', true))
 Navigation.Nav(Base.NodeElement('.nav-close', false))
 
 // work

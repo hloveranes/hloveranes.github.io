@@ -28,17 +28,22 @@ const Nav = (nodeElement) => {
   }
   
   let navButton = nav.children[0].addEventListener('click', () => {
-    var nbutton_data = nav.getAttribute('data-var');
+    var navDrawer = nav.getAttribute('data-var');
     var drawer_menu = document.getElementById('drawer-menu');
-    if(nbutton_data == 'close'){
+    if(navDrawer == 'close'){
+      // on open do the ff
       Open_nav();
       nav.setAttribute('data-var', 'open');
+      drawer_menu.classList.remove('hidden');
       drawer_menu.classList.add('nav-drawer-effect');
+      drawer_menu.classList.add('sticky');
     } else {
+      // on close do the ff
       Close_nav();
       nav.setAttribute('data-var', 'close');
       drawer_menu.classList.remove('sticky');
-      drawer_menu.classList.remove('nav-drawer-effect');
+      drawer_menu.classList.remove('nav-drawer-effect'); 
+      drawer_menu.classList.add('hidden');
     }
   }) 
   
