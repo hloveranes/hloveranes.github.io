@@ -8,7 +8,7 @@ const OnScrollPage = (nav, drawerMenu) => {
     var navDrawer = nav[0].getAttribute('data-var');  
     if(navDrawer == 'open'){
       drawerMenu.classList.remove('hidden');
-      setTimeout(function(){ drawerMenu.classList.add('sticky'); }, 1000);
+      drawerMenu.classList.add('sticky');
     } else if (window.scrollY < 100){
       drawerMenu.classList.remove('sticky');
       drawerMenu.classList.add('hidden');
