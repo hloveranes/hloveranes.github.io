@@ -42,5 +42,10 @@ const Nav = (nodeElement) => {
     }
   }) 
   
+  // const OnLoadOfPage = () => {
+  //   document.addEventListener('scroll', function(e) {
+  //     window.scrollTo(0,0);
+  //   })
+  // }
 }
 export default { Nav }

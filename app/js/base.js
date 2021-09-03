@@ -5,20 +5,14 @@ const NodeElement = (element, by_id) => {
 
 const OnScrollPage = (nodeElement) => {
   document.addEventListener('scroll', function(e) {
+    // console.log(window.scrollY)   
     
-    if(window.scrollY > 100){
+    if(window.scrollY > 100 ){
       // var drawer_menu = document.getElementById('drawer-menu');
-      console.log(window.scrollY)   
       nodeElement.classList.add('sticky');
     }
     
   });
 }
-
-// const OnLoadOfPage = () => {
-//   document.addEventListener('scroll', function(e) {
-//     window.scrollTo(0,0);
-//   })
-// }
 
 export default { NodeElement, OnScrollPage }
