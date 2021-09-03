@@ -52,8 +52,8 @@ var role = 'Full Stack Web Developer'
 Remove.CodeComment()
 
 // Base.OnLoadOfPage()
-Base.OnScrollPage()
-Navigation.Nav()
+Base.OnScrollPage(Base.NodeElement('drawer-menu', true))
+Navigation.Nav(Base.NodeElement('.nav-close', false))
 
 // work
 Project.Project(context_json, display_count, Base.NodeElement('owner-projects', true))

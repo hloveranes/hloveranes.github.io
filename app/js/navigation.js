@@ -1,6 +1,6 @@
-const Nav = () => {
+const Nav = (nodeElement) => {
   // on initialization
-  var nav = document.getElementsByClassName('nav-close')[0];
+  var nav = nodeElement[0];
   var nav_data_var = nav.getAttribute('data-var');
   var first_span = nav.children[0].children[1].children[0];
   var second_span = nav.children[0].children[1].children[1];
@@ -27,7 +27,7 @@ const Nav = () => {
     Open_nav();
   }
   
-  var navButton = nav.children[0].addEventListener('click', () => {
+  let navButton = nav.children[0].addEventListener('click', () => {
     var nbutton_data = nav.getAttribute('data-var');
     var drawer_menu = document.getElementById('drawer-menu');
     if(nbutton_data == 'close'){
@@ -41,7 +41,6 @@ const Nav = () => {
       drawer_menu.classList.remove('nav-drawer-effect');
     }
   }) 
-  
   
 }
 export default { Nav }
