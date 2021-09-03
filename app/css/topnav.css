@@ -1,0 +1,19 @@
+/* topnav */
+.nav-burger-menu {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background-color: transparent;
+}
+#drawer-menu {
+  top: 0;
+  z-index: 100;
+}
+.nav-drawer {
+  left: 100%;
+  transition: left .3s;
+  background-color: aquamarine;
+}
+.nav-drawer-effect {
+  left: 0%;
+}

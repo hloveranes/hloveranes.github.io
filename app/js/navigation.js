@@ -30,20 +30,18 @@ const Nav = () => {
   var navButton = nav.children[0].addEventListener('click', () => {
     var nbutton_data = nav.getAttribute('data-var');
     var drawer_menu = document.getElementById('drawer-menu');
-    var drawer_menu_content = drawer_menu.children[0];
     if(nbutton_data == 'close'){
       Open_nav();
       nav.setAttribute('data-var', 'open');
-
-      drawer_menu.classList.remove('hidden')
-      drawer_menu_content.classList.remove('translate-x-full')
+      drawer_menu.classList.add('nav-drawer-effect');
     } else {
       Close_nav();
       nav.setAttribute('data-var', 'close');
-      
-      drawer_menu.classList.add('hidden')
-      drawer_menu_content.classList.add('translate-x-full')
+      drawer_menu.classList.remove('sticky');
+      drawer_menu.classList.remove('nav-drawer-effect');
     }
-  })
+  }) 
+  
+  
 }
 export default { Nav }

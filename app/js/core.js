@@ -51,9 +51,8 @@ var role = 'Full Stack Web Developer'
 
 Remove.CodeComment()
 
-// window.onload = () => {
-// }
-// navigation
+// Base.OnLoadOfPage()
+Base.OnScrollPage()
 Navigation.Nav()
 
 // work
