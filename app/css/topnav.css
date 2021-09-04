@@ -1,18 +1,37 @@
 /* topnav */
-.nav-burger-menu {
-  position: sticky;
+#navigation {
   top: 0;
+  position: fixed;
   z-index: 200;
-  background-color: transparent;
 }
-#drawer-menu {
-  top: 0;
-  z-index: 100;
+.nav-burger-menu {
+  background-color: #050A30;
+  /* opacity: 0.8; */
+  padding: 0.25rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+#nav-profile {
+  text-align: center;
+  /* color: white; */
+  width: 50px;
+}
+#nav-profile > div {
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+.nav-burger-menu > nav > button {
+  color: white;
+  width: 50px;
 }
 .nav-drawer {
+  top: 62px;
   left: 100%;
   transition: left .3s;
-  background-color: aquamarine;
+  background-color: #000C66;
 }
 .nav-drawer-effect {
   left: 0%;

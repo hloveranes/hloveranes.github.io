@@ -5,18 +5,26 @@ const NodeElement = (element, by_id) => {
 
 const OnScrollPage = (nav, drawerMenu) => {
   document.addEventListener('scroll', function(e) {
-    var navDrawer = nav[0].getAttribute('data-var');  
-    if(navDrawer == 'open'){
-      drawerMenu.classList.remove('hidden');
-      drawerMenu.classList.add('sticky');
-    } else if (window.scrollY < 100){
-      drawerMenu.classList.remove('sticky');
+    var navDrawer = nav[0].getAttribute('data-var'); 
+    let temp_counter = drawerMenu.getAttribute('data-class-counter');
+    if(navDrawer == 'closed' && temp_counter > 0){
       drawerMenu.classList.add('hidden');
     } else {
-      drawerMenu.classList.remove('sticky');
-      drawerMenu.classList.add('hidden');
+      drawerMenu.classList.remove('hidden');
     }
   });
 }
 
-export default { NodeElement, OnScrollPage }
+const OnMouseMove = (nav, drawerMenu) => {
+  document.addEventListener("touchstart", function(e) { checkClass()})
+  document.addEventListener("touchend", function(e) { checkClass()})
+  document.addEventListener("touchcancel", function(e) { checkClass()})
+  document.addEventListener("touchmove", function(e) { checkClass()})
+
+  const checkClass = () => {
+    // console.log('mouse move')
+  }
+}
+
+
+export default { NodeElement, OnScrollPage, OnMouseMove }
