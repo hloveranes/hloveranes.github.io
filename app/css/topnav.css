@@ -15,8 +15,8 @@ nav {
 }
 #nav-profile {
   text-align: center;
-  /* color: white; */
   width: 50px;
+  margin-left: .5rem;
 }
 #nav-profile > div {
   margin-top: 10px;
@@ -27,6 +27,7 @@ nav {
   #drawer-menu > div > ul { 
     display: flex;
     flex-direction: row;
+    padding-right: 1.5rem;
   }
   #drawer-menu > div > ul > li > a{ 
     font-size: 1.25rem;
@@ -39,10 +40,11 @@ nav {
     position: absolute;
   }
   #drawer-menu > div > ul { 
+    padding-left: 0.75rem;
     overflow-y: auto;
   }
   .nav-drawer {
-    top: 62px;
+    top: 61px;
     left: 100%;
     transition: left .3s;
     background-color: #000C66;
@@ -54,4 +56,7 @@ nav {
 .nav-burger-menu > nav > button {
   color: white;
   width: 50px;
+}
+.nav-burger-menu > nav > button > div{
+  --tw-translate-x: 65%;
 }
