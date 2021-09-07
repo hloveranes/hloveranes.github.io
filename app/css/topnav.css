@@ -59,4 +59,5 @@ nav {
 }
 .nav-burger-menu > nav > button > div{
   --tw-translate-x: 65%;
+  --tw-translate-y: 50%;
 }
