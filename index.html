@@ -26,7 +26,8 @@
     <div id="navigation" class="w-full">
       <div class="relative">
         <!-- Navigation Menu -->
-        <div class="nav-burger-menu mx-auto w-full absolute md:hidden">
+        <div class="nav-burger-menu mx-auto w-full absolute">
+        <!-- <div class="nav-burger-menu mx-auto w-full absolute md:hidden"> -->
           <nav class="nav-close items-center" data-var="closed">
             <div id="nav-profile">
               <div class="animate-bounce bg-white">
@@ -35,7 +36,32 @@
                 </div>
               </div> 
             </div>
-            <button class="text-gray-500 w-full h-10 relative focus:outline-none">
+            
+            <!-- Menu Drawer -->
+            <div id="drawer-menu" class="nav-drawer">
+              <div class="block py-6 w-full">
+                <ul class="pl-3 text-white">
+                  <li class="px-1 pb-1">
+                    <a href="#introduction">Introduction</a>
+                  </li> 
+                  <li class="px-1 pb-1">
+                    <a href="#about">About Me</a>
+                  </li>
+                  <li class="px-1 pb-1">
+                    <a href="#project">Project</a>
+                  </li>
+                  <li class="px-1 pb-1">
+                    <a href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="px-1 pb-1">
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Nav Button -->
+            <button class="text-gray-500 w-full h-10 relative focus:outline-none md:hidden">
               <span class="sr-only">Open main menu</span>
               <div class="block w-5 absolute right-0 mr-7 top-1/2 transform translate-x-1/2 translate-y-1/2">
                 <span aria-hidden="true" 
@@ -48,34 +74,11 @@
             </button>
           </nav>
         </div>
-
-        <!-- Menu Drawer -->
-        <div id="drawer-menu" class="nav-drawer absolute w-full bg-gray-100 md:hidden">
-          <div class="block py-6 w-full">
-            <ul class="pl-3 text-white overflow-y-auto">
-              <li class="px-1 pb-1">
-                <a href="#introduction">-> Introduction</a>
-              </li> 
-              <li class="px-1 pb-1">
-                <a href="#about">-> About Me</a>
-              </li>
-              <li class="px-1 pb-1">
-                <a href="#project">-> Project</a>
-              </li>
-              <li class="px-1 pb-1">
-                <a href="#testimonial">-> Testimonial</a>
-              </li>
-              <li class="px-1 pb-1">
-                <a href="#contact">-> Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
 
     <!-- Introduction section -->
-    <section id="introduction" class="max-w-screen-md mx-auto md:mt-32 mt-40">
+    <section id="introduction" class="max-w-screen-md mx-auto mt-72">
       <div class="p-3 text-center">
         <h1 class="owner-name text-6xl font-bold">Name</h1>
         <h1 class="owner-role text-3xl font-bold mt-5">Role</h1>

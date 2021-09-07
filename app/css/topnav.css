@@ -23,16 +23,35 @@ nav {
   padding: 10px;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  #drawer-menu > div > ul { 
+    display: flex;
+    flex-direction: row;
+  }
+  #drawer-menu > div > ul > li > a{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #drawer-menu {
+    width: 100%;
+    position: absolute;
+  }
+  #drawer-menu > div > ul { 
+    overflow-y: auto;
+  }
+  .nav-drawer {
+    top: 62px;
+    left: 100%;
+    transition: left .3s;
+    background-color: #000C66;
+  }
+  .nav-drawer-effect {
+    left: 0%;
+  }
+}
 .nav-burger-menu > nav > button {
   color: white;
   width: 50px;
-}
-.nav-drawer {
-  top: 62px;
-  left: 100%;
-  transition: left .3s;
-  background-color: #000C66;
-}
-.nav-drawer-effect {
-  left: 0%;
 }
